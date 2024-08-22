@@ -1,0 +1,224 @@
+# Guía Básica de Java
+
+Esta guía proporciona definiciones y ejemplos de conceptos básicos en Java que se utilizan en los ejercicios del repositorio.
+
+## Tipos de Datos
+
+1. **`int`**: Tipo de dato para almacenar números enteros.
+   - **Definición**: Un tipo de dato primitivo que representa números enteros sin decimales.
+   - **Ejemplo**:
+     ```java
+     int edad = 25;
+     System.out.println("Edad: " + edad);
+     ```
+
+2. **`double`**: Tipo de dato para almacenar números decimales.
+   - **Definición**: Un tipo de dato primitivo que representa números con decimales.
+   - **Ejemplo**:
+     ```java
+     double precio = 19.99;
+     System.out.println("Precio: " + precio);
+     ```
+
+3. **`String`**: Tipo de dato para almacenar cadenas de texto.
+   - **Definición**: Una clase en Java que representa una secuencia de caracteres.
+   - **Ejemplo**:
+     ```java
+     String nombre = "Juan";
+     System.out.println("Nombre: " + nombre);
+     ```
+
+## Estructuras Condicionales
+
+1. **`if`**: Estructura condicional que ejecuta un bloque de código si se cumple una condición.
+   - **Definición**: Permite ejecutar un bloque de código basado en si una condición es verdadera.
+   - **Ejemplo**:
+     ```java
+     if (edad > 18) {
+         System.out.println("Adulto");
+     }
+     ```
+
+2. **`else`**: Estructura condicional que ejecuta un bloque de código si la condición del `if` no se cumple.
+   - **Definición**: Proporciona una alternativa cuando la condición en el `if` es falsa.
+   - **Ejemplo**:
+     ```java
+     if (edad > 18) {
+         System.out.println("Adulto");
+     } else {
+         System.out.println("Menor de edad");
+     }
+     ```
+
+3. **`else if`**: Estructura condicional que permite verificar múltiples condiciones.
+   - **Definición**: Permite comprobar varias condiciones en secuencia.
+   - **Ejemplo**:
+     ```java
+     if (edad > 18) {
+         System.out.println("Adulto");
+     } else if (edad > 12) {
+         System.out.println("Adolescente");
+     } else {
+         System.out.println("Niño");
+     }
+     ```
+
+## Entrada y Salida
+
+1. **`print`**: Método que muestra información en la consola sin saltar a una nueva línea.
+   - **Definición**: Imprime texto en la consola sin añadir una nueva línea al final.
+   - **Ejemplo**:
+     ```java
+     System.out.print("Hola ");
+     ```
+
+2. **`println`**: Método que muestra información en la consola y salta a una nueva línea.
+   - **Definición**: Imprime texto en la consola y añade una nueva línea al final.
+   - **Ejemplo**:
+     ```java
+     System.out.println("Mundo");
+     ```
+
+3. **`BufferedReader`**: Clase para leer datos desde la entrada estándar.
+   - **Definición**: Utiliza un buffer para leer texto de manera eficiente desde la entrada estándar (teclado).
+   - **Ejemplo**:
+     ```java
+     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+     System.out.println("Ingrese su nombre: ");
+     String nombre = br.readLine();
+     System.out.println("Hola, " + nombre);
+     ```
+
+## Conversión de Tipos
+
+1. **`Integer.parseInt()`**: Método para convertir una cadena de texto en un número entero.
+   - **Definición**: Convierte una cadena de texto que representa un número entero a un valor `int`.
+   - **Ejemplo**:
+     ```java
+     String texto = "123";
+     int numero = Integer.parseInt(texto);
+     System.out.println("Número: " + numero);
+     ```
+
+2. **`Double.parseDouble()`**: Método para convertir una cadena de texto en un número decimal.
+   - **Definición**: Convierte una cadena de texto que representa un número decimal a un valor `double`.
+   - **Ejemplo**:
+     ```java
+     String texto = "123.45";
+     double numero = Double.parseDouble(texto);
+     System.out.println("Número: " + numero);
+     ```
+
+## Operadores
+
+1. **Operador `%`**: Operador módulo, devuelve el residuo de una división.
+   - **Definición**: Calcula el residuo de una división entre dos números.
+   - **Ejemplo**:
+     ```java
+     int resultado = 10 % 3;
+     System.out.println("Residuo: " + resultado);
+     ```
+
+2. **Operador `&&`**: Operador lógico "Y", combina múltiples condiciones.
+   - **Definición**: Devuelve `true` si ambas condiciones son verdaderas.
+   - **Ejemplo**:
+     ```java
+     boolean resultado = (5 > 3) && (8 > 5);
+     System.out.println("Resultado: " + resultado);
+     ```
+
+## Estructuras de Control
+
+1. **`switch`**: Estructura de control que permite seleccionar una de varias opciones basadas en el valor de una variable.
+   - **Definición**: Ejecuta diferentes bloques de código basados en el valor de una expresión.
+   - **Ejemplo**:
+     ```java
+     int dia = 3;
+     switch (dia) {
+         case 1:
+             System.out.println("Lunes");
+             break;
+         case 2:
+             System.out.println("Martes");
+             break;
+         case 3:
+             System.out.println("Miércoles");
+             break;
+         default:
+             System.out.println("Día inválido");
+     }
+     ```
+
+## Bucles
+
+1. **`for`**: Bucle que itera sobre un rango de valores.
+   - **Definición**: Repite un bloque de código un número específico de veces.
+   - **Ejemplo**:
+     ```java
+     for (int i = 0; i < 5; i++) {
+         System.out.println("Número: " + i);
+     }
+     ```
+
+2. **`while`**: Bucle que ejecuta un bloque de código mientras se cumple una condición.
+   - **Definición**: Repite un bloque de código mientras una condición sea verdadera.
+   - **Ejemplo**:
+     ```java
+     int i = 0;
+     while (i < 5) {
+         System.out.println("Número: " + i);
+         i++;
+     }
+     ```
+
+3. **`do-while`**: Bucle que ejecuta un bloque de código al menos una vez y luego repite mientras se cumpla una condición.
+   - **Definición**: Similar al `while`, pero garantiza al menos una ejecución.
+   - **Ejemplo**:
+     ```java
+     int i = 0;
+     do {
+         System.out.println("Número: " + i);
+         i++;
+     } while (i < 5);
+     ```
+
+## Funciones y Métodos
+
+1. **Métodos**: Bloques de código que realizan una tarea específica y pueden ser reutilizados.
+   - **Definición**: Funciones definidas dentro de una clase que pueden ser llamadas para ejecutar una tarea.
+   - **Ejemplo**:
+     ```java
+     public class Ejemplo {
+         public static void saludo() {
+             System.out.println("Hola Mundo");
+         }
+
+         public static void main(String[] args) {
+             saludo();
+         }
+     }
+     ```
+
+## Notas Adicionales
+
+- **Comentarios**: Se utilizan para explicar el código. Los comentarios de una línea se escriben con `//`, y los comentarios de varias líneas se encierran entre `/*` y `*/`.
+  - **Ejemplo**:
+    ```java
+    // Esto es un comentario de una línea
+    /*
+     * Esto es un comentario
+     * de varias líneas
+     */
+    ```
+
+- **Excepciones**: Errores que ocurren durante la ejecución del programa. Se manejan con `try` y `catch`.
+  - **Ejemplo**:
+    ```java
+    try {
+        int division = 10 / 0;
+    } catch (ArithmeticException e) {
+        System.out.println("Error: División por cero");
+    }
+    ```
+
+Esta guía es una referencia completa para comprender los conceptos básicos en Java que se utilizan en los ejercicios. Puedes consultar esta guía para aclarar cualquier duda sobre los conceptos y su aplicación.
