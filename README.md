@@ -29,4 +29,4 @@ Para una explicación detallada de los conceptos básicos utilizados en estos ej
 Si deseas contribuir a este repositorio, por favor revisa las pautas de contribución y envía tus pull requests.
 
 5. Licencia
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para obtener más información.
