@@ -14,11 +14,11 @@ Para una explicación detallada de los conceptos básicos utilizados en estos ej
 
 1. Clona el repositorio:
    ```sh
-   git clone <URL-del-repositorio>
+   git clone <https://github.com/ishigami98/Ejercicios-Basicos-Java.git>
 
 2. Navega al directorio del repositorio:
    ```sh
-   cd <nombre-del-repositorio>
+   cd <Ejercicios-Basicos-Java>
 
 3. Compila y ejecuta los archivos .java:
    ```sh
